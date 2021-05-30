@@ -9,10 +9,11 @@ build:
     push: false
   artifacts:
     - image: okirim/auth
-      context: ./auth
+      context: auth
       docker:
         dockerfile: Dockerfile   
       sync:
         manual:
           - src: 'src/**/*.ts'
             dest: .  
+            
