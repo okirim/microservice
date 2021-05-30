@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { ApiResponse } from '../ApiResponse';
+import { ApiResponse } from '../services/ApiResponse';
 import { AppError } from './AppError';
 
 interface ErrorType { stack?:string,message: string }
